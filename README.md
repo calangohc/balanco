@@ -12,9 +12,3 @@ O que ele não faz, mas deveria:
 * conectar automagicamente no gdocs e subir os dados
 * fazer uns gráficos lokos
 * brujeria!!!
-
-
-
-		
-	
-	 
