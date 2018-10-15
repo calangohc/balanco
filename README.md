@@ -13,8 +13,30 @@ O que ele não faz, mas deveria:
 * fazer uns gráficos lokos
 * brujeria!!!
 
+Pré-requisitos para rodar o código:
 
+- Python 3
+- Pipenv
 
-		
-	
-	 
+Executando o código:
+
+Crie seu ambiente pipenv e ative seu shell:
+
+```bash
+$ pipenv install
+$ pipenv shell
+```
+
+Copie os arquivos da pasta de exemplo para a pasta input:
+
+```bash
+$ cp data/example/caixa.txt data/input/caixa.txt
+$ cp data/example/mercadopago.xls data/input/mercadopago.xls
+$ cp data/example/paypal.csv data/input/paypal.csv
+```
+
+Inicialize o jupyter notebook:
+
+```bash
+$ jupyter-notebook financeiro.ipynb
+```

@@ -1,3 +1,14 @@
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+*$py.class
 ~.
 .~*
 .ipynb_checkpoints
+
+data/input/*.txt
+data/input/*.xls
+data/input/*.csv
+data/output/*.txt
+data/output/*.xls
+data/output/*.csv
