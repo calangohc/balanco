@@ -5,15 +5,15 @@ import pandas as pd
 
 def extract_dataframe(file_path):
     dataframe = pd.DataFrame(
-        pd.read_csv(file_path, encoding='latin-1'),
-        columns=['Data', ' Nome', ' Líquido']
+        pd.read_csv(file_path, encoding='utf-8'),
+        columns=['Data', 'Nome', 'Líquido']
     )
 
     dataframe.rename(
         columns={
             'Data': 'data',
-            ' Nome': 'quem',
-            ' Líquido': 'valor',
+            'Nome': 'quem',
+            'Líquido': 'valor',
         },
         inplace=True,
     )
@@ -26,7 +26,7 @@ def extract_dataframe(file_path):
 
 
 def format_date(date):
-    return datetime.strptime(str(date), '%d-%m-%Y').strftime('%d/%m/%Y')
+    return datetime.strptime(str(date), '%d/%m/%Y').strftime('%d/%m/%Y')
 
 
 def format_value(value):
